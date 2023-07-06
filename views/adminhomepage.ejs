@@ -1,0 +1,71 @@
+<%-include('header')-%>
+
+<section id="adminhome">
+    <header id="header">
+        <nav>
+            <div class="container bar2">
+                <div class="text-center">
+                    <h2 class="nav-brand text-dark">User Management System</h2>
+                </div>
+                <div class="logoutbtn">
+                    <a href="/admin/logout" class="logout-btn">Logout</a>
+                </div>
+            </div>
+        </nav>
+        <div class="box-nav d-flex" style="margin-left: 170px; margin-top: 100px;">
+            <form action="/admin/search" method="post">
+              <input type="text" required style="height: 36px;" placeholder="search" name="search"><button class="submit-btn" type="submit">Search</button>
+            </form>
+            <form action="/admin/reset" method="get">
+                <button class="submit-btn">Reset</button>
+            </form>
+            <form action="/admin/adduser" method="get">
+                <button class="submit-btn">Add User</button>
+            </form>
+
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main id="site-main">
+        <div class="container">
+
+            <!-- form handeling -->
+           <form action="/">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>Email</th>
+                            <th>Delete</th>
+                            <th>update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0;i < find.length;i++){%>
+                            <tr>
+                                <td><%=i+1 %></td>
+                                <td><%=find[i].name%></td>
+                                <td><%=find[i].email%></td>
+                                <td><a href="/admin/delete?id=<%=find[i]._id %>"><i class="fa-solid fa-trash"></i></a></td>
+                                <td><a href="/admin/updateuser?id=<%=find[i]._id %>"><i class="fa-solid fa-pen"></i></a></td>
+                            </tr>
+                            
+                        <%} %>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </main>
+</section>
+
+
+
+
+
+
+
+
+<%-include('footer')-%>

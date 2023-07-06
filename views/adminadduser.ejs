@@ -1,0 +1,32 @@
+
+<%-include('header')-%>
+
+<section id="adduser">
+    <div class="text-center center-div" id="signup2">
+        
+        <div class="container w-25 border border-secondary rounded py-5">
+            <div class="title pb-5" id="head4">
+                <h2 class="font-weight-bold">Create new User</h2> 
+            </div>
+            <form action="/admin/accountCreated" method="POST" class="pt-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Full name">
+                
+                </div>
+                <div class="form-group pt-3">
+                    <input type="email" class="form-control" name="email" placeholder="email">
+                    
+                </div>
+                <div class="form-group pt-3">
+                    <input type="password" class="form-control" name="password" placeholder="password">
+                </div>
+            
+                <button class="btn btn-primary  buttn3" type="submit">Add user</button>
+                
+            </form>
+        </div>
+    </div>
+</section>
+
+   
+<%-include('footer')-%>

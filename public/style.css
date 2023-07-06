@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*login css starts*/
+#section1 {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('assets/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+}
+
+#login1 {
+    position: absolute;
+
+    left: 40vh;
+    top: 20vh;
+    width: 220vh;
+   
+}
+
+#login{
+    text-align: center;
+    font-weight: bold;
+}
+#buttn1{
+   margin-top: 3vh;
+    width: 10vh;
+}
+
+#link{
+    color: darkblue;
+}
+#text{
+    margin-top: 5vh;
+}
+
+
+#adminButton{
+    position: absolute;
+    right: 55vh;
+    top: -10vh;
+   
+}
+/*signup css ends*/
+
+/*signup css starts*/
+#section2 {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('assets/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+}
+#signup{
+   position: absolute;
+   top: 10vh;
+   left: 5vh;
+   width: 205vh;
+   
+}
+.buttn{
+    margin-top: 4vh;
+}
+#text2{
+    margin-top: 4vh;
+    color: black;
+}
+#head2 h2{
+    color: azure;
+    font-weight: bold;
+}
+#head2 span{
+    color: azure;
+}
+
+/*signup css ends*/
+
+
+/*AdminLogin css starts*/
+
+#section3 {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('assets/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+}
+#adminLogin {
+    text-align: center;
+    font-weight: bolder;
+    color: azure;
+    
+}
+
+#Adminlogin{
+    position: absolute;
+    top: 10vh;
+   left: 35vh;
+    width: 205vh;
+}
+#adminLogin h2{
+    text-align: center;
+    font-weight: bolder;
+    
+}
+#text3 {
+    margin-top: 4vh;
+    color: black;
+}
+#link3 {
+    color: blue;
+}
+
+/* adminlogin css ends */
+
+/* dashboard css starts*/
+#homepage{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('assets/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+
+}
+#dashboard{
+    position: absolute;
+    top: 28vh;
+    left: 5vh;
+    width: 200vh;
+    color: azure;
+}
+
+
+/* adminhomepage css starts */
+#adminhome{
+    box-sizing: border-box;
+    /* background-image: url('assets/bg6.jpg'); */
+    background-color: azure;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+
+}
+#adminhome nav{
+    background-color: darkgray;
+    padding: 1em 0;
+    width: 100%;
+}
+.container h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+#site-main{
+    margin-top: 6em;
+    font-family: 'Barlow',sans-serif;
+}
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--dark);
+}
+.table td>a.btn{
+    padding: 3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+.table tbody tr:hover{
+    background-color: darkcyan;
+    padding: 1em 0;
+    color: azure;
+}
+thead tr{
+    background-color: black;
+    padding: 1em 0;
+    color: azure;
+}
+.bar2{
+    display: flex;
+    flex-direction: row;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logout-btn {
+    background-color: blue;
+    color: azure;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    position: absolute;
+    right: 5vh;
+    top: 5vh;
+  }
+
+  .logout-btn:hover {
+    background-color: #fff;
+    color: #555;
+  }
+.submit-btn {
+    background-color:#03b384;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+
+  .submit-btn:hover {
+    background-color:#06d6a0;
+    color: #555;
+  }
+
+  /* adduser css starts */
+
+  #adduser {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('assets/bg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+}
+#signup2{
+   position: absolute;
+   top: 10vh;
+   left: 5vh;
+   width: 205vh;
+   
+}
+.buttn3{
+    margin-top: 4vh;
+}
+#head4 h2{
+    color: azure;
+    font-weight: bold;
+}
+#head4 span{
+    color: azure;
+}
+
+/* edit user css starts */
+#Edituser {
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url('assets/bg2.jpg'); */
+    background-color: azure;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+}
+#signup3{
+   position: absolute;
+   top: 10vh;
+   left: 5vh;
+   width: 205vh;
+   
+}
+
+.buttn4{
+    margin-top: 4vh;
+}
+#head5 h2{
+    color: black;
+    font-weight: bold;
+}
+#head4 span{
+    color: azure;
+}
+.lab{
+    font-size: large;
+    text-align: right;
+}

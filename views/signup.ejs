@@ -1,0 +1,48 @@
+
+<%-include('header')-%>
+
+<section id="section2">
+    <div class="text-center center-div" id="signup">
+        
+        <div class="container w-25 border border-secondary rounded py-5">
+            <div class="title pb-5" id="head2">
+                <h2 class="font-weight-bold">Signup</h2> 
+                <span>Create new Account</span>
+                <% if(locals.message){%>
+                    <div id=" msg" class="alert alert-success text-center"role="alert">
+                        <%=message%>
+                    </div>
+                  <%}%>  
+                  <% if(locals.invalid){%>
+                    <div id=" msg" class="alert alert-danger text-center"role="alert">
+                        <%=invalid%>
+                    </div>
+                  <%}%> 
+            </div>
+            <form action="/accountCreated" method="POST" class="pt-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Full name">
+                
+                </div>
+                <div class="form-group pt-3">
+                    <input type="email" class="form-control" name="email" placeholder="email">
+                    
+                </div>
+                <div class="form-group pt-3">
+                    <input type="password" class="form-control" name="password" placeholder="password">
+                </div>
+                <div class="form-group pt-3">
+                    <input type="password" class="form-control" name="Cpassword" placeholder="confirm password">
+                </div>
+                <button class="btn btn-primary  buttn" type="submit">Sign up</button>
+                <div class="text-center" id="text2">
+                    <p>Already have an account? <a href="/">Login</a></p>
+                  
+                  </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+   
+<%-include('footer')-%>

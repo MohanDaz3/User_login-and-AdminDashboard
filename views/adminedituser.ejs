@@ -1,0 +1,34 @@
+
+<%-include('header')-%>
+
+<section id="Edituser">
+    
+    <div class="text-center center-div" id="signup3">
+     
+        
+        <div class="container w-25 border border-secondary rounded py-5">
+            <div class="title pb-5" id="head5">
+                <h2 class="font-weight-bold">Update User Info</h2> 
+            </div>
+            <form action="/admin/update" method="POST" class="pt-2">
+                <div class="form-group">
+                    <label class="lab" for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="name" value="<%=userdata.name%>">
+                
+                </div>
+                <div class="form-group pt-3">
+                    <label class="lab" for="email">Email</label>
+                    <input type="email" id="email" name="email" value="<%=userdata.email%>">
+                    <input type="hidden"  name="id" value="<%=userdata._id%>">
+                </div>
+                
+               
+                <button class="btn btn-primary  buttn4" type="submit" value="update">update</button>
+                
+            </form>
+        </div>
+    </div>
+</section>
+
+   
+<%-include('footer')-%>

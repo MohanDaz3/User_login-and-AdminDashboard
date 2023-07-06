@@ -1,0 +1,43 @@
+
+<%-include('header')-%>
+
+<section id="section1">
+<div class="text-centre centre-div" id="login1">
+   <form action="/admin/adminLogin" method="get" id="adminButton">
+     <input type="submit" class="btn btn-primary adminButtn" value="Admin">
+   </form>
+
+    <div class="container w-25 border border-secondary rounded py-5" >
+        <div class="title pb-5 text-centre" id="login">
+           <h2 class="font-weight-bold">D Welcomes u!!!</h2>
+           <span>Login for existing users</span>
+           <% if(locals.message){%>
+            <div id=" msg" class="alert alert-success text-center"role="alert">
+                <%=message%>
+            </div>
+          <%}%>  
+          <% if(locals.invalid){%>
+            <div id=" msg" class="alert alert-danger text-center"role="alert">
+                <%=invalid%>
+            </div>
+          <%}%> 
+        </div>
+        <form action="login" method="post" class="pt-2">
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="email">
+                <small class="text-muted text-left">Registered email</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="password">
+            </div>
+            <button class="btn btn-primary" id="buttn1" type="submit">Login</button>
+            <div class="text-centre" id="text">
+                <p>Don't have an account yet? <a href="/signup" id="link">Signup</a></p>
+            </div>
+        </form>
+
+    </div>
+</div>
+</section>
+
+<%-include('footer')-%>
